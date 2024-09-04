@@ -10,7 +10,8 @@ CC_FLAGS=-c         \
          -W         \
          -Wall      \
          -ansi      \
-         -pedantic
+				 -std=c++11
+         #-pedantic
 
 CC_SDL=`sdl2-config --cflags --libs`
 
