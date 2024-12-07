@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <math.h>
 #include <string>
-#include <iostream>
 
 #define SCREEN_WIDTH 384
 #define SCREEN_HEIGHT 216
