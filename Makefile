@@ -4,7 +4,7 @@ C_SOURCE=$(wildcard *.cpp)
 
 OBJ=$(C_SOURCE:.c=.o)
 
-CC=gcc
+CC=g++
 
 CC_FLAGS=-c         \
          -W         \
@@ -12,7 +12,8 @@ CC_FLAGS=-c         \
          -ansi      \
          -pedantic
 
-CC_SDL=`sdl2-config --cflags --libs`
+# CC_SDL=`pkgconf --cflags --libs sdl2`
+CC_SDL := `sdl2-config --libs --cflags` -lSDL2_ttf
 
 all: $(PROJ_NAME)
 
